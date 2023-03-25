@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Single page app</title>
+	<link rel="stylesheet"
+	      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+	      integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk"
+	      crossorigin="anonymous">
+</head>
+<body>
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+	<a class="navbar-brand" href="#">Single page app</a>
+	<div class="collapse navbar-collapse" id="navbarText">
+		<ul class="navbar-nav mr-auto">
+			<li class="nav-item">
+				<a class="nav-link" id="home-btn" data-page="homePage" href="#">Home</a>
+			</li>
+			<li class="nav-item">
+				<a class="nav-link" id="about-us-btn" data-page="aboutUsPage" href="#">About us</a>
+			</li>
+			<li class="nav-item">
+				<a class="nav-link" id="skills-btn" data-page="skillsPage" href="#">Skills</a>
+			</li>
+			<li class="nav-item">
+				<a class="nav-link" id="contact-us-btn" data-page="contactUsPage" href="#">Contact</a>
+			</li>
+		</ul>
+	</div>
+</nav>
+
+<!--Home-->
+<div id="home-page">
+
+</div>
+
+<!--About us-->
+<div id="about-us-page">
+	<div class="list-group m-3">
+		<a href="#" class="list-group-item list-group-item-action active">
+			<div class="d-flex w-100 justify-content-between">
+				<h5 class="mb-1">List group item heading</h5>
+				<small>3 days ago</small>
+			</div>
+			<p class="mb-1">Donec id elit non mi porta gravida at eget metus. Maecenas sed diam eget
+				risus varius blandit.</p>
+			<small>Donec id elit non mi porta.</small>
+		</a>
+		<a href="#" class="list-group-item list-group-item-action">
+			<div class="d-flex w-100 justify-content-between">
+				<h5 class="mb-1">List group item heading</h5>
+				<small class="text-muted">3 days ago</small>
+			</div>
+			<p class="mb-1">Donec id elit non mi porta gravida at eget metus. Maecenas sed diam eget
+				risus varius blandit.</p>
+			<small class="text-muted">Donec id elit non mi porta.</small>
+		</a>
+		<a href="#" class="list-group-item list-group-item-action">
+			<div class="d-flex w-100 justify-content-between">
+				<h5 class="mb-1">List group item heading</h5>
+				<small class="text-muted">3 days ago</small>
+			</div>
+			<p class="mb-1">Donec id elit non mi porta gravida at eget metus. Maecenas sed diam eget
+				risus varius blandit.</p>
+			<small class="text-muted">Donec id elit non mi porta.</small>
+		</a>
+	</div>
+</div>
+
+<!--Skills-->
+<div class="m-3" id="skills-page">
+	<div class="progress m-3">
+		<div class="progress-bar" role="progressbar" aria-valuenow="0" aria-valuemin="0"
+		     aria-valuemax="100"></div>
+	</div>
+	<div class="progress m-3">
+		<div class="progress-bar" role="progressbar" style="width: 25%" aria-valuenow="25"
+		     aria-valuemin="0" aria-valuemax="100"></div>
+	</div>
+	<div class="progress m-3">
+		<div class="progress-bar" role="progressbar" style="width: 50%" aria-valuenow="50"
+		     aria-valuemin="0" aria-valuemax="100"></div>
+	</div>
+	<div class="progress m-3">
+		<div class="progress-bar" role="progressbar" style="width: 75%" aria-valuenow="75"
+		     aria-valuemin="0" aria-valuemax="100"></div>
+	</div>
+	<div class="progress m-3">
+		<div class="progress-bar" role="progressbar" style="width: 100%" aria-valuenow="100"
+		     aria-valuemin="0" aria-valuemax="100"></div>
+	</div>
+</div>
+
+<!--Contact-->
+<div id="contact-us-page">
+	<form class="m-3">
+		<div class="form-row align-items-center">
+			<div class="col-auto">
+				<label class="sr-only" for="inlineFormInput">Name</label>
+				<input type="text" class="form-control mb-2" id="inlineFormInput"
+				       placeholder="Jane Doe">
+			</div>
+			<div class="col-auto">
+				<label class="sr-only" for="inlineFormInputGroup">Username</label>
+				<div class="input-group mb-2">
+					<div class="input-group-prepend">
+						<div class="input-group-text">@</div>
+					</div>
+					<input type="text" class="form-control" id="inlineFormInputGroup"
+					       placeholder="Username">
+				</div>
+			</div>
+			<div class="col-auto">
+				<div class="form-check mb-2">
+					<input class="form-check-input" type="checkbox" id="autoSizingCheck">
+					<label class="form-check-label" for="autoSizingCheck">
+						Remember me
+					</label>
+				</div>
+			</div>
+			<div class="col-auto">
+				<button type="submit" class="btn btn-primary mb-2">Submit</button>
+			</div>
+		</div>
+	</form>
+</div>
+
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+        integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
+        crossorigin="anonymous"></script>
+<script src="./script.js"></script>
+</body>
+</html>
